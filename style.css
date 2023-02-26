@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background: white;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 3px 5px rgba(39, 115, 230, 0.3);
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 2rem;
+}
+.logo h1 {
+    color: rgb(33, 70, 190);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.menu {
+    margin-right: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+.menu .btn {
+    color: rgb(33, 70, 190);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid rgb(33, 70, 190);
+    border-radius: 5rem;
+    width: 5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+}
+
+.stn_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 7rem;
+    margin-top: -8rem;
+    margin-bottom: -25rem;
+}
+
+.part-one {
+    margin-top: 10rem;
+}
+
+.part-one h1 {
+    width: 30rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    color: rgb(33, 70, 190);
+    margin-bottom: 2.5rem;
+}
+
+.part-one p {
+    width: 25rem;
+    max-width: fit-content;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.part-one button {
+    color: rgb(33, 70, 190);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid rgb(33, 70, 190);
+    border-radius: 5rem;
+    width: 25rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.part-two img {
+    width: 100%;
+    height: 60%;
+    border: 2px white;
+    border-radius: 25%;
+}
+
+.info_page h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    left: -100%;
+    animation: info 15s forwards infinite;
+    width: 100%;
+}
+
+@keyframes info {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 100%;
+    }
+    
+}
+
+.service h1 {
+    color:rgb(33, 70, 190);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-bottom: 2px solid rgb(33, 70, 190);
+    width: fit-content;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem;
+    margin: 2rem;
+}
+
+.data, .airtime, .cable, .bill, .print, .sms {
+    border: 2px solid rgb(33, 70, 190);
+    border-radius: 5%;
+    padding: 2rem;
+    width: 15rem;
+    margin-bottom: 3rem;
+    box-shadow:  5px 8px 7px  rgba(39, 115, 230, 0.3);
+}
+
+.data h2, .airtime h2, .bill h2, .print h2, .cable h2, .sms h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(33, 70, 190);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.data p, .airtime p, .bill p, .print p, .cable p, .sms p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.data a, .airtime a, .bill a, .print a, .cable a, .sms a {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(33, 70, 190);
+    border-bottom:  2px solid rgb(33, 70, 190);
+    width: fit-content;
+    height: 1.2rem;
+}
+
+.data img, .airtime img, .bill img, .print img, .cable img, .sms img {
+    width: 15rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    max-width: 100%;
+    margin-top: 2rem;
+}
+
+form input:first-child {
+    height: 20rem;
+    border: 2px solid rgb(33, 70, 190);
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    box-shadow:  5px 8px 7px  rgba(39, 115, 230, 0.3);
+}
+
+form input:first-child::placeholder {
+    color: rgb(33, 70, 190);
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+form input:last-child {
+    color: rgb(33, 70, 190);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid rgb(33, 70, 190);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: rgb(33, 70, 190);
+    margin-top: 2rem;
+}
+
+.footer h1 {
+    color: white;
+    margin-top: 2rem;
+}
+
+.footer_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.footer_menu, .footer_service, .call, .social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_menu a, .footer_service a, .call a , .social a{
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer_menu a:hover, .footer_service a:hover, .call a:hover, .social a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    color:rgba(165, 196, 241, 0.3);
+    text-align: center;
+}
+
+.close {
+    display: none;
+}
+
+@media (max-width:1075px) {
+
+
+.part-one {
+    margin-top: 4rem;
+}
+
+.part-one h1 {
+    max-width: fit-content;
+}
+
+.part-one p {
+    width: fit-content;
+}
+
+.part-one button {
+    width: fit-content;
+}
+  .part-two img {
+    width: 25rem;
+  }
+
+  .service {
+    margin-top: 15rem;
+  }
+
+  .data, .airtime, .cable, .bill, .print, .sms {
+    width: fit-content;
+    margin-left: 1.5rem ;
+  }
+
+  .data img, .airtime img, .cable img, .bill img, .print img, .sms img {
+    width: 8rem;
+  } 
+
+
+}
+
+@media (max-width:833px) {
+    .info_page {
+        width: 100%;
+        font-size: 0.7rem;
+    }
+.stn_1 {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.part-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.part-two img {
+    width: 100%;
+}
+.service h1 {
+    margin-top: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#support {
+    margin-top: -5rem;
+    text-align: center;
+}
+.logo h1 {
+    text-align: center;
+}
+.footer_div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footer_menu, .footer_service, .call, .social {
+    margin-top: 2rem;
+}
+}
+
+@media (max-width:683px) {
+    .head {
+        width: 100%;
+    }
+
+    .logo h1 {
+        font-size: 1.7rem;
+    }
+
+    .stn_1 {
+        margin-top: -3rem;
+    }
+
+    .info_page h1 {
+        width: 100%;
+    }
+
+  
+}
+
+@media (max-width:625px) {
+    .menu {
+        position: absolute;
+        top: 4.3rem;
+        background:rgb(33, 70, 190);
+        margin: 0;
+        height: 35vh;
+        width: 50%;
+        right: -100%;
+        transition: 2s all;
+    }
+
+    .active {
+        right: 0;
+    }
+
+   
+
+
+    .menu a {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 3rem;
+        color: #ffff;
+    }
+
+    .menu button {
+        margin-left: 5.5rem;
+    }
+
+
+
+    .hamburger {
+        display: block;
+        background:rgb(33, 70, 190);
+        border: 2px solid rgb(33, 70, 190);
+        margin-right: 5rem;
+        border-radius: 50%;
+        padding: 0.2rem;
+        transition: 2s all;
+    }
+
+    .close {
+        background:rgb(33, 70, 190);
+        border: 2px solid rgb(33, 70, 190);
+        margin-right: 5rem;
+        border-radius: 50%;
+        padding: 0.3rem;
+        transition: 2s all;
+    }
+
+    .part-one h1 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+   
+}
+
+    
+@media (max-width:375px) {
+    .menu a {
+        width: 100%;
+    }
+
+    .part-one {
+        margin-top: 1rem;
+    }
+
+    .part-one h1 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .part-one p {
+        width: 100%;
+    }
+
+    .menu button {
+        margin-left: 3rem;
+    }
+
+    
+}

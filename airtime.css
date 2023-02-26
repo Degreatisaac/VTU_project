@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+    box-shadow: 0 3px 5px rgba(39, 115, 230, 0.3);
+}
+
+.logo {
+    margin-left: 2rem;
+}
+.logo h1 {
+    color: rgb(33, 70, 190);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.menu {
+    margin-right: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+.menu .btn {
+    color: rgb(33, 70, 190);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid rgb(33, 70, 190);
+    border-radius: 5rem;
+    width: 5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5rem;
+}
+
+.main h1 {
+    color: rgb(33, 70, 190);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+    border: 2px solid rgb(33, 70, 190);
+    padding: 2rem;
+    width: 35rem;
+    margin-bottom: 3rem;
+    box-shadow:  5px 8px 7px  rgba(39, 115, 230, 0.3);
+    margin-top: 2rem;
+    height: 29rem;
+}
+
+.wallet, .network, .amount, .phone_number, .bundle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form label {
+    color: rgb(33, 70, 190);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+form button {
+    color: rgb(33, 70, 190);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid rgb(33, 70, 190);
+    border-radius: 1rem;
+    width: 7rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.balance {
+    margin-top: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+.footer {
+    background-color: rgb(33, 70, 190);
+    margin-top: 2rem;
+}
+
+.footer h1 {
+    color: white;
+    margin-top: 2rem;
+}
+
+.footer_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.footer_menu, .footer_service, .call, .social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_menu a, .footer_service a, .call a , .social a{
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer_menu a:hover, .footer_service a:hover, .call a:hover, .social a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    color:rgba(165, 196, 241, 0.3);
+    text-align: center;
+}
+
+.serve {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background:rgb(33, 70, 190);
+    border-radius: 10px;
+    padding: 1rem;
+    transition: 2s all;
+    width: 15rem;
+}
+
+.serve a {
+    color: #ffff;
+}
+
+.add {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+.close {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+@media (max-width:698px) {
+
+    
+
+    .menu {
+        position: fixed;
+        top: 4.3rem;
+        background:rgb(33, 70, 190);
+        margin: 0;
+        height: 100vh;
+        width: 50%;
+        right: -100%;
+        transition: 2s all;
+        z-index: 9999;
+    }
+
+    .menu a {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 3rem;
+        color: #ffff;
+    }
+
+    .menu button {
+        margin-left: 5.5rem;
+    }
+
+    .active {
+        right: 0;
+    }
+
+
+    
+    .hamburger {
+        display: block;
+        background:rgb(33, 70, 190);
+        border: 2px solid rgb(33, 70, 190);
+        margin-right: 2rem;
+        border-radius: 50%;
+        padding: 0.2rem;
+        transition: 2s all;
+        position: relative;
+    }
+
+    .close {
+        background:rgb(33, 70, 190);
+        border: 2px solid rgb(33, 70, 190);
+        margin-right: 2rem;
+        border-radius: 50%;
+        padding: 0.3rem;
+        transition: 2s all;
+        position: relative;
+    }
+
+    .serve {
+        padding: 0;
+    }
+
+    .serve a {
+        margin-top: -2rem;
+        width: fit-content;
+    }
+
+    .main form {
+        width: fit-content;
+    }
+
+    .footer_div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer_menu, .footer_service, .call, .social {
+        margin-top: 2rem;
+    }
+
+    .logo h1 {
+        text-align: center;
+    }
+
+}
+
+@media (max-width:375px) {
+    .menu a {
+        width: 100%;
+    }
+
+    .menu button {
+        margin-left: 3.5rem;
+    }
+
+    .serve a {
+        width: fit-content;
+    }
+}
